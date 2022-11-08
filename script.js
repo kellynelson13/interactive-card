@@ -7,6 +7,9 @@ const cardNumber = document.getElementById("cardNumber");
 const mm = document.getElementById("mm");
 const yy = document.getElementById("yy");
 const expiry = document.getElementById("expiry");
+const cardCvc = document.getElementById("cardCvc");
+const cvc = document.getElementById("cvc");
+
 
 const handleClick = (e) => {
     e.preventDefault();
@@ -14,6 +17,7 @@ const handleClick = (e) => {
     cardName.innerText = name.value;
     cardNumber.innerText = number.value;
     expiry.innerText = `${mm.value}/${yy.value}`;
+    cardCvc.innerText = cvc.value;
 }
 
 button.addEventListener("click", handleClick)
