@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Space Grotesk', sans-serif;
+    
 }
 
 #card-back {
@@ -35,4 +36,12 @@ body {
 
 input {
     margin: 12px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: rgb(210, 210, 210) solid 1px;
+    color:rgb(210, 210, 210)
+}
+
+fieldset {
+    border: 0;
 }
