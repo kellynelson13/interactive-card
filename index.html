@@ -11,7 +11,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles.css" />
     <script src="./script.js" defer></script>
 
     <title>Frontend Mentor | Interactive card details form</title>
@@ -28,38 +28,44 @@
     </style>
   </head>
   <body>
+    <div id="card-back">
+      <img id="back" src="/images/bg-card-back.png" />
+      <p id="cardCvc">000</p>
+    </div>
+
     <div id="card-front">
       <p id="cardNumber">0000 0000 0000 0000</p>
       <p id="cardName">Jane Appleseed</p>
       <p id="expiry">00/00</p>
     </div>
 
-    <div id="card-back">
-      <p id="cardCvc">000</p>
+    <div id="body">
+      <form>
+        <div id="name-number">
+          <label for="name">Cardholder Name</label>
+          <input id="name" type="text" placeholder="e.g. Jane Appleseed" />
+          <label for="number">Card Number</label>
+          <input
+            id="number"
+            type="tel"
+            inputmode="numeric"
+            maxlength="19"
+            pattern="[0-9/s]{13,19}"
+            placeholder="e.g. 1234 5678 9123 0000"
+          />
+        </div>
+        <fieldset>
+          <legend>Exp. Date (MM/YY)</legend>
+          <input id="mm" type="text" placeholder="MM" />
+          <input id="yy" type="text" placeholder="YY" />
+        </fieldset>
+        <label for="cvc">CVC</label>
+        <input id="cvc" type="text" placeholder="e.g. 123" />
+        <input id="button" type="submit" value="Confirm" />
+      </form>
     </div>
 
-    <div id="body">
-    <form>
-      <label for="name">Cardholder Name</label>
-      <input id="name" type="text" placeholder="e.g. Jane Appleseed"/>
-      <label for="number">Card Number</label>
-      <input id="number" type="text" placeholder="e.g. 1234 5678 9123 0000"/>
-      <fieldset>
-        <legend>Exp. Date (MM/YY)</legend>
-        <input id="mm" type="text" placeholder="MM"/>
-        <input id="yy" type="text" placeholder="YY" />
-      </fieldset>
-      <label for="cvc">CVC</label>
-      <input id="cvc" type="text" placeholder="e.g. 123"/>
-      <input id="button" type="submit" value="Confirm"/>
-    </form>
-  </div>
-     
-        
-
     <!-- Completed state start -->
-
- 
 
     <div class="attribution">
       Challenge by

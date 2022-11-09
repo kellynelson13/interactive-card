@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+#card-back {
+    background-image: url('images/bg-main-mobile.png');
+    background-attachment:inherit;
+    height: 230px;
+    position: relative;
+}
+
+#back {
+    width: 70%;
+    position: relative;
+    left: 90px;
+    top: 30px;
+}
+
+#cardCvc {
+    z-index: 1;
+    color: white;
+    position: absolute;
+    top: 82px;
+    right: 55px;
+    font-size: 11px;
+
+}
+
+#name-number {
+    display: grid;
+    padding: 15px;
+}
+
+input {
+    margin: 12px 0;
+}

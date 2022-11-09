@@ -9,6 +9,7 @@ const yy = document.getElementById("yy");
 const expiry = document.getElementById("expiry");
 const cardCvc = document.getElementById("cardCvc");
 const cvc = document.getElementById("cvc");
+const numberError = document.getElementById("number-error");
 
 
 const handleClick = (e) => {
@@ -18,6 +19,9 @@ const handleClick = (e) => {
     cardNumber.innerText = number.value;
     expiry.innerText = `${mm.value}/${yy.value}`;
     cardCvc.innerText = cvc.value;
+    if (number.value === false) {
+        numberError.innerText = "Wrong format, numbers only"
+    }
 }
 
 button.addEventListener("click", handleClick)
