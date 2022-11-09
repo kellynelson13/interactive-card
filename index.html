@@ -54,14 +54,20 @@
             placeholder="e.g. 1234 5678 9123 0000"
           />
         </div>
-        <fieldset>
-          <legend>Exp. Date (MM/YY)</legend>
-          <input id="mm" type="text" placeholder="MM" />
-          <input id="yy" type="text" placeholder="YY" />
-        </fieldset>
-        <label for="cvc">CVC</label>
-        <input id="cvc" type="text" placeholder="e.g. 123" />
-        <input id="button" type="submit" value="Confirm" />
+        <div id="exp-cvc">
+          <fieldset>
+            <legend>Exp. Date (MM/YY)</legend>
+            <div id="two-small">
+              <input id="mm" type="text" placeholder="MM" />
+              <input id="yy" type="text" placeholder="YY" />
+            </div>
+          </fieldset>
+          <div>
+            <label for="cvc">CVC</label>
+            <input id="cvc" type="text" placeholder="e.g. 123" />
+          </div>
+          <input id="button" type="submit" value="Confirm" />
+        </div>
       </form>
     </div>
 

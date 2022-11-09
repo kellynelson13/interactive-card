@@ -45,3 +45,17 @@ input {
 fieldset {
     border: 0;
 }
+
+#exp-cvc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#two-small {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#two-small input {
+    width: 65%;
+}
